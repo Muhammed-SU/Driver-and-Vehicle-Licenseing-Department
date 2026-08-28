@@ -67,6 +67,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -80,6 +81,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVLD_Main_Screen.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Applications_icon.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Applications_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drivers_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Account_Settings_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVLD_Main_Screen_Background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
