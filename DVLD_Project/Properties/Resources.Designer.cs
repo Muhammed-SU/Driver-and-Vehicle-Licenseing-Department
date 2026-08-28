@@ -103,6 +103,16 @@ namespace DVLD_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DVLD_Login_Screen {
+            get {
+                object obj = ResourceManager.GetObject("DVLD_Login_Screen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DVLD_Main_Screen {
             get {
                 object obj = ResourceManager.GetObject("DVLD_Main_Screen", resourceCulture);
