@@ -143,5 +143,35 @@
   <ItemGroup>
     <None Include="Resources\PersonID_Icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NationalNo_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gender_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DateOfBirth_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Country_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonInfo_pbBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DVLD_Buisness_Layer\DVLD_Buisness_Layer.csproj">
+      <Project>{8953859d-3880-4702-bce1-b1558e1387c9}</Project>
+      <Name>DVLD_Buisness_Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
