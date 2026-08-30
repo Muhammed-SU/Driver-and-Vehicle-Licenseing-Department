@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DVLD_Project.People;
+using DVLD_Project.Global_Classes;
 
 namespace DVLD_Project
 {
@@ -20,6 +22,12 @@ namespace DVLD_Project
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void peopleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmListPeople();
+            frm1.ShowDialog();
         }
     }
 }

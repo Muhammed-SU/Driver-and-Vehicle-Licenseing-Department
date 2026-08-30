@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblPersonID = new System.Windows.Forms.Label();
-            this.lblFullName = new System.Windows.Forms.Label();
-            this.lblNationalNo = new System.Windows.Forms.Label();
-            this.lblGender = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblAddress = new System.Windows.Forms.Label();
+            this.llEditPersonInfo = new System.Windows.Forms.LinkLabel();
             this.lblCountry = new System.Windows.Forms.Label();
             this.lblPhone = new System.Windows.Forms.Label();
             this.lblDateOfBirth = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.lblNationalNo = new System.Windows.Forms.Label();
+            this.lblFullName = new System.Windows.Forms.Label();
+            this.lblPersonID = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pbPerosnImage = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pbGenderIcon = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.llEditPersonInfo = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPerosnImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -65,7 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGenderIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -93,7 +93,7 @@
             this.groupBox1.Controls.Add(this.lblPersonID);
             this.groupBox1.Controls.Add(this.pictureBox6);
             this.groupBox1.Controls.Add(this.pictureBox5);
-            this.groupBox1.Controls.Add(this.pictureBox4);
+            this.groupBox1.Controls.Add(this.pbGenderIcon);
             this.groupBox1.Controls.Add(this.pictureBox3);
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.label6);
@@ -111,137 +111,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Person Information";
             // 
-            // label2
+            // llEditPersonInfo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(60, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 24);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Name :";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(24, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Person ID :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label3.Location = new System.Drawing.Point(6, 98);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 24);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "National No :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label4.Location = new System.Drawing.Point(45, 128);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 24);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Gender :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label5.Location = new System.Drawing.Point(63, 158);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 24);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Email :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label6.Location = new System.Drawing.Point(38, 188);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 24);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Address :";
-            // 
-            // lblPersonID
-            // 
-            this.lblPersonID.AutoSize = true;
-            this.lblPersonID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPersonID.ForeColor = System.Drawing.Color.Black;
-            this.lblPersonID.Location = new System.Drawing.Point(170, 38);
-            this.lblPersonID.Name = "lblPersonID";
-            this.lblPersonID.Size = new System.Drawing.Size(60, 24);
-            this.lblPersonID.TabIndex = 17;
-            this.lblPersonID.Text = "[????]";
-            // 
-            // lblFullName
-            // 
-            this.lblFullName.AutoSize = true;
-            this.lblFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFullName.ForeColor = System.Drawing.Color.Red;
-            this.lblFullName.Location = new System.Drawing.Point(170, 68);
-            this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(60, 24);
-            this.lblFullName.TabIndex = 18;
-            this.lblFullName.Text = "[????]";
-            // 
-            // lblNationalNo
-            // 
-            this.lblNationalNo.AutoSize = true;
-            this.lblNationalNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNationalNo.ForeColor = System.Drawing.Color.Black;
-            this.lblNationalNo.Location = new System.Drawing.Point(170, 98);
-            this.lblNationalNo.Name = "lblNationalNo";
-            this.lblNationalNo.Size = new System.Drawing.Size(60, 24);
-            this.lblNationalNo.TabIndex = 19;
-            this.lblNationalNo.Text = "[????]";
-            // 
-            // lblGender
-            // 
-            this.lblGender.AutoSize = true;
-            this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGender.ForeColor = System.Drawing.Color.Black;
-            this.lblGender.Location = new System.Drawing.Point(170, 128);
-            this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(60, 24);
-            this.lblGender.TabIndex = 20;
-            this.lblGender.Text = "[????]";
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.ForeColor = System.Drawing.Color.Black;
-            this.lblEmail.Location = new System.Drawing.Point(170, 158);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(60, 24);
-            this.lblEmail.TabIndex = 21;
-            this.lblEmail.Text = "[????]";
-            // 
-            // lblAddress
-            // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.ForeColor = System.Drawing.Color.Black;
-            this.lblAddress.Location = new System.Drawing.Point(170, 188);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(60, 24);
-            this.lblAddress.TabIndex = 22;
-            this.lblAddress.Text = "[????]";
+            this.llEditPersonInfo.AutoSize = true;
+            this.llEditPersonInfo.Location = new System.Drawing.Point(637, 20);
+            this.llEditPersonInfo.Name = "llEditPersonInfo";
+            this.llEditPersonInfo.Size = new System.Drawing.Size(123, 20);
+            this.llEditPersonInfo.TabIndex = 33;
+            this.llEditPersonInfo.TabStop = true;
+            this.llEditPersonInfo.Text = "Edit Person Info";
             // 
             // lblCountry
             // 
@@ -309,6 +187,138 @@
             this.label18.TabIndex = 23;
             this.label18.Text = "Date Of Birth :";
             // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.ForeColor = System.Drawing.Color.Black;
+            this.lblAddress.Location = new System.Drawing.Point(170, 188);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(60, 24);
+            this.lblAddress.TabIndex = 22;
+            this.lblAddress.Text = "[????]";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.Black;
+            this.lblEmail.Location = new System.Drawing.Point(170, 158);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(60, 24);
+            this.lblEmail.TabIndex = 21;
+            this.lblEmail.Text = "[????]";
+            // 
+            // lblGender
+            // 
+            this.lblGender.AutoSize = true;
+            this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGender.ForeColor = System.Drawing.Color.Black;
+            this.lblGender.Location = new System.Drawing.Point(170, 128);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(60, 24);
+            this.lblGender.TabIndex = 20;
+            this.lblGender.Text = "[????]";
+            // 
+            // lblNationalNo
+            // 
+            this.lblNationalNo.AutoSize = true;
+            this.lblNationalNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNationalNo.ForeColor = System.Drawing.Color.Black;
+            this.lblNationalNo.Location = new System.Drawing.Point(170, 98);
+            this.lblNationalNo.Name = "lblNationalNo";
+            this.lblNationalNo.Size = new System.Drawing.Size(60, 24);
+            this.lblNationalNo.TabIndex = 19;
+            this.lblNationalNo.Text = "[????]";
+            // 
+            // lblFullName
+            // 
+            this.lblFullName.AutoSize = true;
+            this.lblFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFullName.ForeColor = System.Drawing.Color.Red;
+            this.lblFullName.Location = new System.Drawing.Point(170, 68);
+            this.lblFullName.Name = "lblFullName";
+            this.lblFullName.Size = new System.Drawing.Size(60, 24);
+            this.lblFullName.TabIndex = 18;
+            this.lblFullName.Text = "[????]";
+            // 
+            // lblPersonID
+            // 
+            this.lblPersonID.AutoSize = true;
+            this.lblPersonID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPersonID.ForeColor = System.Drawing.Color.Black;
+            this.lblPersonID.Location = new System.Drawing.Point(170, 38);
+            this.lblPersonID.Name = "lblPersonID";
+            this.lblPersonID.Size = new System.Drawing.Size(60, 24);
+            this.lblPersonID.TabIndex = 17;
+            this.lblPersonID.Text = "[????]";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label6.Location = new System.Drawing.Point(38, 188);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(99, 24);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Address :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label5.Location = new System.Drawing.Point(63, 158);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 24);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Email :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label4.Location = new System.Drawing.Point(45, 128);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(92, 24);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Gender :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label3.Location = new System.Drawing.Point(6, 98);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(131, 24);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "National No :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label2.Location = new System.Drawing.Point(60, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 24);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Name :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label1.Location = new System.Drawing.Point(24, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Person ID :";
+            // 
             // pbPerosnImage
             // 
             this.pbPerosnImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -372,15 +382,15 @@
             this.pictureBox5.TabIndex = 15;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox4
+            // pbGenderIcon
             // 
-            this.pictureBox4.Image = global::DVLD_Project.Properties.Resources.Gender_Icon;
-            this.pictureBox4.Location = new System.Drawing.Point(134, 128);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 24);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
+            this.pbGenderIcon.Image = global::DVLD_Project.Properties.Resources.Gender_Icon;
+            this.pbGenderIcon.Location = new System.Drawing.Point(134, 128);
+            this.pbGenderIcon.Name = "pbGenderIcon";
+            this.pbGenderIcon.Size = new System.Drawing.Size(30, 24);
+            this.pbGenderIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbGenderIcon.TabIndex = 14;
+            this.pbGenderIcon.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -412,16 +422,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // llEditPersonInfo
-            // 
-            this.llEditPersonInfo.AutoSize = true;
-            this.llEditPersonInfo.Location = new System.Drawing.Point(637, 20);
-            this.llEditPersonInfo.Name = "llEditPersonInfo";
-            this.llEditPersonInfo.Size = new System.Drawing.Size(123, 20);
-            this.llEditPersonInfo.TabIndex = 33;
-            this.llEditPersonInfo.TabStop = true;
-            this.llEditPersonInfo.Text = "Edit Person Info";
-            // 
             // ctrlPersonCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -437,7 +437,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGenderIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -457,7 +457,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pbGenderIcon;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblCountry;
