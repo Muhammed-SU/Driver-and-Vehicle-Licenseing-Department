@@ -1,49 +1,58 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Odbc;
 using System.IO;
 using System.Linq;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DVLD_Buisness_Layer;
+using Microsoft.Win32;
 
 namespace DVLD_Project.Global_Classes
 {
     internal static class clsGlobal
     {
+        private const string RegistryKeyPath = @"HKEY_CURRENT_USER\SOFTWARE\LoginInfo";
+
+        private const int PasswordEncryptKey = 22;
+
         public static clsUser CurrentUser;
+
+        private static string EncryptPassword(string Password)
+        {
+            string EncryptPassword = "";
+
+            for (int i =0; i < Password.Length; i++)
+            {
+                EncryptPassword += (char)(Password[i] + PasswordEncryptKey);
+            }
+
+            return EncryptPassword;
+        }
+
+        private static string DecryptPassword(string Password)
+        {
+            string DecryptPassword = "";
+
+            for (int i = 0; i < Password.Length; i++)
+            {
+                DecryptPassword += (char)(Password[i] - PasswordEncryptKey);
+            }
+
+            return DecryptPassword;
+        }
 
         public static bool RememberUsernameAndPassword(string Username, string Password)
         {
-
+            string NewPassword = EncryptPassword(Password);
             try
             {
-                //this will get the current project directory folder.
-                string currentDirectory = System.IO.Directory.GetCurrentDirectory();
+                Registry.SetValue(RegistryKeyPath, "Username", Username);
+                Registry.SetValue(RegistryKeyPath, "Password", NewPassword);
 
-
-                // Define the path to the text file where you want to save the data
-                string filePath = currentDirectory + "\\data.txt";
-
-                //incase the username is empty, delete the file
-                if (Username == "" && File.Exists(filePath))
-                {
-                    File.Delete(filePath);
-                    return true;
-
-                }
-
-                // concatonate username and passwrod withe seperator.
-                string dataToSave = Username + "#//#" + Password;
-
-                // Create a StreamWriter to write to the file
-                using (StreamWriter writer = new StreamWriter(filePath))
-                {
-                    // Write the data to the file
-                    writer.WriteLine(dataToSave);
-
-                    return true;
-                }
+                return true;
             }
             catch (Exception ex)
             {
@@ -51,41 +60,19 @@ namespace DVLD_Project.Global_Classes
                 return false;
             }
 
+            //return true;
         }
 
         public static bool GetStoredCredential(ref string Username, ref string Password)
         {
-            //this will get the stored username and password and will return true if found and false if not found.
             try
             {
-                //gets the current project's directory
-                string currentDirectory = System.IO.Directory.GetCurrentDirectory();
+                Username = Registry.GetValue(RegistryKeyPath, "Username", null) as string;
+                string EncryptPassword = Registry.GetValue(RegistryKeyPath, "Password", null) as string;
 
-                // Path for the file that contains the credential.
-                string filePath = currentDirectory + "\\data.txt";
-
-                // Check if the file exists before attempting to read it
-                if (File.Exists(filePath))
+                if (Username == null || Password == null) return false;
                 {
-                    // Create a StreamReader to read from the file
-                    using (StreamReader reader = new StreamReader(filePath))
-                    {
-                        // Read data line by line until the end of the file
-                        string line;
-                        while ((line = reader.ReadLine()) != null)
-                        {
-                            Console.WriteLine(line); // Output each line of data to the console
-                            string[] result = line.Split(new string[] { "#//#" }, StringSplitOptions.None);
-
-                            Username = result[0];
-                            Password = result[1];
-                        }
-                        return true;
-                    }
-                }
-                else
-                {
-                    return false;
+                    Password = DecryptPassword(EncryptPassword);
                 }
             }
             catch (Exception ex)
@@ -94,6 +81,7 @@ namespace DVLD_Project.Global_Classes
                 return false;
             }
 
+            return true;
         }
 
     }
