@@ -113,7 +113,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::DVLD_Project.Properties.Resources.DVLD_Main_Screen_Background;
+            this.pictureBox1.Image = global::DVLD_Project.Properties.Resources.DVLD_Main_Screen_Background1;
             this.pictureBox1.Location = new System.Drawing.Point(0, 72);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1924, 989);

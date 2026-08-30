@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DVLD_Project.Login;
 using DVLD_Project.People;
 using DVLD_Project.Global_Classes;
 
@@ -14,13 +15,12 @@ namespace DVLD_Project
 {
     public partial class frmMain : Form
     {
-        public frmMain()
+        frmLogin _frmLogin;
+
+        public frmMain(frmLogin frm)
         {
             InitializeComponent();
-        }
-
-        private void toolStripMenuItem3_Click(object sender, EventArgs e)
-        {
+            _frmLogin = frm;
 
         }
 
