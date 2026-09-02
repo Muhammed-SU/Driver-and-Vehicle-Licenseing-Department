@@ -178,13 +178,6 @@ namespace DVLD_Project.People
 
         }
 
-        private void showDetailsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //int PersonID = (int)dgvPeople.CurrentRow.Cells[0].Value;
-            //Form frm = new frmShowPersonInfo(PersonID);
-            //frm.ShowDialog();
-        }
-
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -250,8 +243,8 @@ namespace DVLD_Project.People
 
         private void dgvPeople_DoubleClick(object sender, EventArgs e)
         {
-            //Form frm = new frmShowPersonInfo((int)dgvPeople.CurrentRow.Cells[0].Value);
-            //frm.ShowDialog();
+            Form frm = new frmShowPersonInfo((int)dgvPeople.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
         }
 
         private void txtFilterValue_KeyPress(object sender, KeyPressEventArgs e)
@@ -259,6 +252,29 @@ namespace DVLD_Project.People
             //we allow number incase person id is selected.
             if (cbFilterBy.Text == "Person ID")
                 e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void showDetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int PersonID = (int)dgvPeople.CurrentRow.Cells[0].Value;
+            Form frm = new frmShowPersonInfo(PersonID);
+            frm.ShowDialog();
+        }
+
+        private void addNewPersonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmAddUpdatePerson();
+            frm.ShowDialog();
+
+            _RefreshPeoplList();
+        }
+
+        private void editToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form frm = new frmAddUpdatePerson((int)dgvPeople.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+
+            _RefreshPeoplList();
         }
     }
 }
