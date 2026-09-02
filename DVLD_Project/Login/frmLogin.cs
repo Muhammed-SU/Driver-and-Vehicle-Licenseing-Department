@@ -82,5 +82,10 @@ namespace DVLD_Project.Login
                 chkRememberMe.Checked = false;
 
         }
+
+        private void btnShowPassword_Click(object sender, EventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = !txtPassword.UseSystemPasswordChar;
+        }
     }
 }

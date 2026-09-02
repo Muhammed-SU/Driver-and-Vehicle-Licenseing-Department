@@ -206,5 +206,8 @@
   <ItemGroup>
     <None Include="Resources\DVLD_Main_Screen_Background1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showPassword.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
