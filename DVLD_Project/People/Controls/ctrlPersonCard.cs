@@ -113,8 +113,8 @@ namespace DVLD_Project.People.Controls
 
         private void llEditPersonInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //frmAddUpdatePerson frm = new frmAddUpdatePerson(_PersonID);
-            //frm.ShowDialog();
+            frmAddUpdatePerson frm = new frmAddUpdatePerson(_PersonID);
+            frm.ShowDialog();
 
             //refresh
             LoadPersonInfo(_PersonID);

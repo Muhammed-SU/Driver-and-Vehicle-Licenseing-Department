@@ -178,16 +178,6 @@ namespace DVLD_Project.People
 
         }
 
-        private void editToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            //Form frm = new frmAddUpdatePerson((int)dgvPeople.CurrentRow.Cells[0].Value);
-            //frm.ShowDialog();
-
-            //_RefreshPeoplList();
-
-        }
-
         private void sendEmailToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This Feature Is Not Implemented Yet!", "Not Ready!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -221,19 +211,11 @@ namespace DVLD_Project.People
 
         }
 
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            //Form frm = new frmAddUpdatePerson();
-            //frm.ShowDialog();
-
-            //_RefreshPeoplList();
-        }
-
         private void btnAddPerson_Click(object sender, EventArgs e)
         {
-            //Form frm1 = new frmAddUpdatePerson();
-            //frm1.ShowDialog();
-            //_RefreshPeoplList();
+            Form frm1 = new frmAddUpdatePerson();
+            frm1.ShowDialog();
+            _RefreshPeoplList();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
