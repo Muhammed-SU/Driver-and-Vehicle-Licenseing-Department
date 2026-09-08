@@ -133,6 +133,26 @@ namespace DVLD_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ChangePassword_Icon {
+            get {
+                object obj = ResourceManager.GetObject("ChangePassword_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ChangePassword_Icon1 {
+            get {
+                object obj = ResourceManager.GetObject("ChangePassword_Icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Close_button {
             get {
                 object obj = ResourceManager.GetObject("Close_button", resourceCulture);
@@ -306,6 +326,16 @@ namespace DVLD_Project.Properties {
         internal static System.Drawing.Bitmap ManagePeople_Image {
             get {
                 object obj = ResourceManager.GetObject("ManagePeople_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ManageUsers_Image {
+            get {
+                object obj = ResourceManager.GetObject("ManageUsers_Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
