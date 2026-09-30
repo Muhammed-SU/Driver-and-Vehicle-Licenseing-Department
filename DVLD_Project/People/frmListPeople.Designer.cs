@@ -86,6 +86,7 @@
             // 
             // cmsPeople
             // 
+            this.cmsPeople.BackColor = System.Drawing.Color.White;
             this.cmsPeople.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showDetToolStripMenuItem,
             this.toolStripSeparator1,

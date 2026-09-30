@@ -286,5 +286,11 @@
   <ItemGroup>
     <None Include="Resources\ManageUsers_Image.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangePassword_Icon.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangePassword_Icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
