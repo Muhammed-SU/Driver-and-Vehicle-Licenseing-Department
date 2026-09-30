@@ -152,9 +152,62 @@ namespace DVLD_Project.User
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
-            //frmAddUpdateUser Frm1 = new frmAddUpdateUser();
-            //Frm1.ShowDialog();
-            //frmListUsers_Load(null, null);
+            frmAddUpdateUser Frm1 = new frmAddUpdateUser();
+            Frm1.ShowDialog();
+            frmListUsers_Load(null, null);
+        }
+
+        private void showDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmUserInfo Frm1 = new frmUserInfo((int)dgvUsers.CurrentRow.Cells[0].Value);
+            Frm1.ShowDialog();
+        }
+
+        private void addNewUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateUser Frm1 = new frmAddUpdateUser();
+            Frm1.ShowDialog();
+            frmListUsers_Load(null, null);
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateUser Frm1 = new frmAddUpdateUser((int)dgvUsers.CurrentRow.Cells[0].Value);
+            Frm1.ShowDialog();
+            frmListUsers_Load(null, null);
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int UserID = (int)dgvUsers.CurrentRow.Cells[0].Value;
+            frmChangePassword Frm1 = new frmChangePassword(UserID);
+            Frm1.ShowDialog();
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int UserID = (int)dgvUsers.CurrentRow.Cells[0].Value;
+            if (clsUser.DeleteUser(UserID))
+            {
+                MessageBox.Show("User has been deleted successfully", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frmListUsers_Load(null, null);
+            }
+
+            else
+                MessageBox.Show("User is not delted due to data connected to it.", "Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void txtFilterValue_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //we allow number incase person id or user id is selected.
+            if (cbFilterBy.Text == "Person ID" || cbFilterBy.Text == "User ID")
+                e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void dgvUsers_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            frmUserInfo Frm1 = new frmUserInfo((int)dgvUsers.CurrentRow.Cells[0].Value);
+            Frm1.ShowDialog();
         }
     }
 }

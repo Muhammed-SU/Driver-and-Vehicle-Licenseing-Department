@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DVLD_Project.Login;
 using DVLD_Project.People;
+using DVLD_Project.User;
 using DVLD_Project.Global_Classes;
 
 namespace DVLD_Project
@@ -28,6 +29,12 @@ namespace DVLD_Project
         {
             Form frm1 = new frmListPeople();
             frm1.ShowDialog();
+        }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmListUsers();
+            frm.ShowDialog();
         }
     }
 }

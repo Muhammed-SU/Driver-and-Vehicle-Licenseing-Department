@@ -151,9 +151,6 @@
   <data name="Address_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Address_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ChangePassword_Icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ChangePassword_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Account_Settings_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Account_Settings_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,8 +175,8 @@
   <data name="Phone_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Phone_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ManageUsers_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ManageUsers_Image.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Email_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Email_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DVLD_Login_Screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DVLD_Login_Screen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,17 +184,17 @@
   <data name="DVLD_Main_Screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DVLD_Main_Screen.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AddPerson_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AddPerson_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="NationalNo_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NationalNo_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Save_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Save_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="female_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AddPerson_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddPerson_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Applications_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Applications_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DateOfBirth_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DateOfBirth_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,8 +202,8 @@
   <data name="Email_Icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Email_Icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Applications_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Applications_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ManageUsers_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ManageUsers_Image.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Drivers_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Drivers_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,8 +211,8 @@
   <data name="ShowDetils_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShowDetils_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ShowDetils_Icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ShowDetils_Icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ChangePassword_Icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChangePassword_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AddPerson_Icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AddPerson_Icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,8 +220,14 @@
   <data name="Users_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Users_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Email_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Email_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="female_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="next_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\next_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShowDetils_Icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShowDetils_Icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Close_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Close_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,7 +241,7 @@
   <data name="DVLD_Main_Screen_Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DVLD_Main_Screen_Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="next_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\next_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="password_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
