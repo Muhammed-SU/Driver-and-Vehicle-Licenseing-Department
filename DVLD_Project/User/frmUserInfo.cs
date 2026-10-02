@@ -17,7 +17,7 @@ namespace DVLD_Project.User
         public frmUserInfo(int UserID)
         {
             InitializeComponent();
-            _UserID = _UserID;
+            _UserID = UserID;
         }
 
         private void btnClose_Click(object sender, EventArgs e)

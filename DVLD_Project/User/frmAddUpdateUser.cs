@@ -79,6 +79,7 @@ namespace DVLD_Project.User
                 return;
             }
 
+            //the following code will not be executed if the person was not found
             lblUserID.Text = _User.UserID.ToString();
             txtUserName.Text = _User.UserName;
             txtPassword.Text = _User.Password;

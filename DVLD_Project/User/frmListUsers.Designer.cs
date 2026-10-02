@@ -95,16 +95,11 @@
             this.cbFilterBy.FormattingEnabled = true;
             this.cbFilterBy.Items.AddRange(new object[] {
             "None",
+            "User ID",
+            "UserName",
             "Person ID",
-            "National No.",
-            "First Name",
-            "Second Name",
-            "Third Name",
-            "Last Name",
-            "Nationality",
-            "Gendor",
-            "Phone",
-            "Email"});
+            "Full Name",
+            "Is Active"});
             this.cbFilterBy.Location = new System.Drawing.Point(105, 278);
             this.cbFilterBy.Name = "cbFilterBy";
             this.cbFilterBy.Size = new System.Drawing.Size(182, 28);
